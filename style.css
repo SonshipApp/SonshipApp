@@ -4,16 +4,21 @@
 }
 
 body{
-	margin: 10px auto;
-	max-width: 840px;
+	margin: 0 auto;
     background-color: white;
+}
+
+#wrapper {
+	max-width: 840px;
+	margin: 0 auto;
+    display: block;
+/*    border-radius: 5px;*/
+	background-color: #4842b8;
 }
 
 nav{
     display: block;
 	background-color: #4842b8;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
     border-bottom-color: aliceblue;
     border-bottom-width: thin;
 }
@@ -28,19 +33,21 @@ nav a{
     text-decoration: none;
 }
 
+@media screen and (min-width: 40.5em) {
+    section {
+        height: 100%;
+        min-height: 1024px;
+    }
+}
+
 section {
 	padding: 0;
-	height: 720px;
- 	background-color: whitesmoke;
     margin: 0;
+	height: 1024px;
+ 	background-color: whitesmoke;
 }
 footer {
-	padding: 0;
 	height: 40px;
-	background-color: #4842b8;
-    margin: 0;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
 }
 
 iframe {
